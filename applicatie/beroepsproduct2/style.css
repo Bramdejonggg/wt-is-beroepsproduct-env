@@ -1,0 +1,446 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: lightskyblue;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 10px;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+}
+
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.login {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.login h1 {
+    font-size: 65px;
+    margin-top: 80px;
+}
+
+.login p {
+    text-decoration: none;
+    color: black;
+    margin-top: 90px;
+}
+
+.button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid yellow;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: yellow;
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 25px;
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.pass {
+    text-align: center;
+    margin: -5px 0 20px 5px;
+    color: silver;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: yellow;
+    border-radius: 25px;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="button"]:hover {
+    border-color: yellow;
+    transition: .2s;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.center h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form {
+    text-align: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 30px;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: silver;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5px;
+    color: black;
+}
+
+.center2 {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.center2 h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center2 form {
+    text-align: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.center3 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.center3 h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center3 form {
+    text-align: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.pass {
+    text-align: center;
+    margin: -5px 0 20px 5px;
+    color: silver;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: yellow;
+    border-radius: 25px;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="button"]:hover {
+    border-color: yellow;
+    transition: .2s;
+}
+
+.Tekst {
+    text-align: left;
+}
+
+.Tekst h1 {
+    text-align: center;
+    font-size: 65px;
+    margin-top: 80px;
+}
+
+.tabel {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    margin-left: 25%;
+    color: black;
+    border: 1px;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+.tabelvluchten {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    margin-left: 30%;
+    color: black;
+    border: 1px;
+    border-collapse: collapse;
+}
+
+.tabelvluchten h1 {
+    font-size: 70px;
+    margin-left: -44%;
+}
+
+.tabelvluchten form{
+    margin-left: -44%;
+}
+
+.tabelpassagiers {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    margin-left: 37%;
+    color: black;
+    border: 1px;
+    border-collapse: collapse;
+}
+
+.tabelpassagiers h1 {
+    font-size: 70px;
+    margin-left: -60%;
+}
+
+.tabelpassagiers form{
+    margin-left: -60%;
+}
+
+th {
+    background-color: yellow;
+    color: black;
+}
+
+.details {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 6%;
+
+}
+
+.aanpassingen {
+    color: black;
+    border-collapse: collapse;
+}
+
+.blok1 {
+    position: absolute;
+    top: 58%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.blok1 h2 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.blok1 form {
+    text-align: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.blok2 {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.blok2 h2 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.blok2 form {
+    text-align: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.blok3 {
+    position: absolute;
+    top: 58%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.blok3 h2 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.blok3 form {
+    text-align: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+form .tekstaanpassen {
+    position: relative;
+    border-bottom: 2px solid silver;
+}
+
+.tekstaanpassen input {
+    width: 100%;
+    height: 35px;
+    padding: 0 5px;
+    top: 2px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.tekstaanpassen label {
+    position: absolute;
+    top: 0%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+
+@media only screen and (max-width: 970px) {
+    .navbar {
+        font-size: 9px;
+    }
+}
