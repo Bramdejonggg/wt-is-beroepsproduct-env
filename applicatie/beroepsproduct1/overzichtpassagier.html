@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<!-- Header -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Gelre Airport</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<!-- Body -->
+
+<body>
+
+    <!-- Navigatiebalk -->
+
+    <nav>
+        <img src="image/Logo.jpg.png" alt="niks">
+        <ul>
+            <li><a href="Index.php">Home</a></li>
+            <li><a href="vluchten.php">Vluchten</a></li>
+            <li><a href="Aanpassingen.php">Aanpassingen</a></li>
+        </ul>
+    </nav>
+    <div class="tabelpassagiers">
+        <h1>Overzicht van alle Passagiers</h1>
+        <form method="post" action="overzichtpassagier.html">
+            <label>Filteren op passagiernummer:</label>
+            <input type="number" name="passagiernummer">
+            <label>Filteren op vluchtnummer:</label>
+            <input type="text" name="vluchtnummer">
+            <input type="submit" href="overzichtpassagier.html"></a>
+        </form>
+        <table>
+            <tr>
+                <th>Passagiernummer:</th>
+                <th>Vluchtnummer:</th>
+                <th>Naam:</th>
+            </tr>
+            <tr>
+                <td>20237</td>
+                <td>7627</td>
+                <td>Jana</td>
+            </tr>
+            <tr>
+                <td>12021</td>
+                <td>2481</td>
+                <td>Bram</td>
+            </tr>
+            <tr>
+                <td>38123</td>
+                <td>3921</td>
+                <td>Hendrik</td>
+            </tr>
+            <tr>
+                <td>29864</td>
+                <td>2932</td>
+                <td>Lars</td>
+            </tr>
+            <tr>
+                <td>42216</td>
+                <td>4025</td>
+                <td>Britt</td>
+            </tr>
+            <tr>
+                <td>71256</td>
+                <td>3261</td>
+                <td>Milica</td>
+            </tr>
+            <tr>
+                <td>50446</td>
+                <td>7627</td>
+                <td>Fleur</td>
+            </tr>
+            <tr>
+                <td>24023</td>
+                <td>4602</td>
+                <td>Frits</td>
+            </tr>
+            <tr>
+                <td>69111</td>
+                <td>2937</td>
+                <td>Lola</td>
+            </tr>
+            <tr>
+                <td>22453</td>
+                <td>2349</td>
+                <td>Peter</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        Copyright Gelre Airport 2020
+    </footer>
+</body>
+
+</html>
